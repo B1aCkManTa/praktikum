@@ -38,9 +38,8 @@ public class Spawner : MonoBehaviour
     }
 
     public static Vector3 RandomPointInBounds(Bounds bounds) {
-        '''
-         a function that takes a boundary and creates a random point inside of this bound
-        '''
+        
+        // a function that takes a boundary and creates a random point inside of this bound 
         
         return new Vector3(
             Random.Range(bounds.min.x, bounds.max.x),
