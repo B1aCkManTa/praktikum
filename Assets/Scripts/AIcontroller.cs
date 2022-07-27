@@ -10,6 +10,7 @@ public class AIcontroller : MonoBehaviour
     public bool random_speed = false;
     public float min_range = 1.0f;
     public float max_range = 10.0f;
+    public Vector3 start_pos;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class AIcontroller : MonoBehaviour
         if(random_speed)
             agent.speed = Random.Range(min_range, max_range);
         agent.SetDestination(goal.transform.position);
+        start_pos = this.transform.position;
     }
 
     // Update is called once per frame
